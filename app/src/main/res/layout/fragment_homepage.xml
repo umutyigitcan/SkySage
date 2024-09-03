@@ -32,6 +32,19 @@
         android:textColor="@color/white"
         />
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/cityName"
+        app:layout_constraintBottom_toTopOf="@id/rv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/sunny"
+        android:visibility="invisible"
+        android:id="@+id/weatherImage"/>
+
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,6 +56,44 @@
         android:layout_marginEnd="7.5dp"
         app:layout_constraintStart_toStartOf="parent"
          />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/desc"
+        android:text="24°C"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/temp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rv"
+        android:text="Cleddar Sky"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/desc"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintBottom_toTopOf="@id/rv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Change"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/buttonshape"
+        android:id="@+id/changeButton"
+        />
+
 
 
 
